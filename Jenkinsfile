@@ -28,6 +28,15 @@ pipeline {
       }
     }
 
+    stage('Build-docker-image') {
+      steps {
+        script {
+          docker.build("${registry}:${env.BUILD_ID}")
+        }
+
+      }
+    }
+
   }
   environment {
     env = 'mbala14/ci-cd-task'
