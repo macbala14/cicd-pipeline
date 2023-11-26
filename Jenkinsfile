@@ -13,10 +13,7 @@ pipeline {
     stage('Build') {
       steps {
         script {
-          sh '''
-            sudo chmod 777 ./scripts/build.sh
-            ./scripts/build.sh
-            '''
+          sh './scripts/build.sh'
         }
 
       }
