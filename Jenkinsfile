@@ -39,6 +39,6 @@ pipeline {
 
   }
   environment {
-    env = 'mbala14/ci-cd-task'
+    registry = 'mbala14/ci-cd-task'
   }
 }
