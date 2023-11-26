@@ -10,6 +10,15 @@ pipeline {
       }
     }
 
+    stage('Build') {
+      steps {
+        script {
+          scripts/build.sh
+        }
+
+      }
+    }
+
   }
   environment {
     env = 'mbala14/ci-cd-task'
